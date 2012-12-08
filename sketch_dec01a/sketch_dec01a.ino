@@ -101,8 +101,8 @@ void applyLightConfig(boolean lightConfig[8]) {
 }
 
 void fadeToConfig(boolean fromConfig[8], boolean toConfig[8]) {
-  int millisLeft = 2000;
-  int millisForSixtyHz = 16;
+  int millisLeft = 500;
+  int millisForSixtyHz = 8;
   int millisOn = millisForSixtyHz;
   while(millisLeft > 0) {
     applyLightConfig(fromConfig);
